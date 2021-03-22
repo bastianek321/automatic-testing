@@ -1,0 +1,3 @@
+from stackoverflow_tests import run_stackoverflow_tests
+
+run_stackoverflow_tests()
