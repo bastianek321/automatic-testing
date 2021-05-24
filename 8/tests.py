@@ -14,6 +14,7 @@ def zalando_test():
         password_field.send_keys('testpassword')
         login_input = login_field.get_attribute('value')
         password_input = password_field.get_attribute('value')
+        print('Test passed(zalando)')
     except Exception:
         print('Test failed')
 
@@ -26,5 +27,6 @@ def stackoverflow_test():
         driver.find_element_by_xpath('//*[@id="product-lob-nav"]/nav/a[2]').click()
         driver.find_element_by_xpath('//*[@id="product-main-nav"]/nav[1]/a[2]').click()
         driver.find_element_by_xpath('//*[@id="wrapper"]/footer/div/div/div[2]/a[2]').click()
+        print('Test passed(stackoverflow)')
     except Exception:
         print('Test failed')
